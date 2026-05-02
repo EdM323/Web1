@@ -2,7 +2,7 @@
     --header-txt-color:white;
     --btn-txt-color:white;
     --btn-bkg-color:black;
-    --btn-hover-bkg-color:#474747;
+    --btn-hover-bkg-color:#32bddc;
     --footer-txt-color:white;
     --footer-bkg-color:black;
 }
@@ -21,7 +21,6 @@ html{
 }
 
 body {
-
     header {
         display:flex;
         justify-content: flex-start;
