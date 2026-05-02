@@ -1,10 +1,16 @@
 :root {
- /* vide */
+    --header-txt-color:white;
+    --btn-txt-color:white;
+    --btn-bkg-color:black;
+    --btn-hover-bkg-color:#474747;
+    --footer-txt-color:white;
+    --footer-bkg-color:black;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -24,26 +30,26 @@ body {
         height: 100px;
 
         background-color: rgb(0, 0, 0);
-        color:white;
+        color:var(--header-txt-color);
 
         a:link {
             text-decoration: none;
-            color: white;
+            color: var(--header-txt-color);
         }
 
         a:visited {
             text-decoration: none;
-            color: white;
+            color: var(--header-txt-color);
         }
         
-               a:link {
+        a:link {
             text-decoration: none;
-            color: white;
+            color: var(--header-txt-color);
         }
 
         a:visited {
             text-decoration: none;
-            color: white;
+            color: var(--header-txt-color);
         }
 
         a:hover{
@@ -58,7 +64,7 @@ body {
         .header-container{
 
             display:flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items:center;
 
             width:990px;
@@ -71,7 +77,7 @@ body {
 
             li{
                 list-style: none;
-                color:white;
+                color:var(--header-txt-color);
                 padding:0px 10px;
             }
         }
@@ -80,8 +86,8 @@ body {
 
     .btn {
         display: inline-block;
-        background-color: black;
-        color: white;
+        background-color: var(--btn-bkg-color);
+        color: var(--btn-txt-color);
         text-decoration: none;
 
         padding: 14px 28px;
@@ -94,7 +100,7 @@ body {
     }
 
     .btn:hover {
-        background-color: #474747;
+        background-color: var(--btn-hover-bkg-color);
     }
 
 
@@ -130,9 +136,10 @@ body {
                     }
 
                     p{
-                         text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.95);
-                       margin-bottom:20px; 
-                       font-weight: bold;
+                        font-size:20px;
+                        text-shadow: 0px 0px 2dvh rgba(255, 255, 255, 0.95);
+                        margin-bottom:20px; 
+                        font-weight: bold;
                     }
 
                 }
@@ -140,19 +147,16 @@ body {
         }
 
         .main-container{
-
             display: flex;
             align-items: center;
             gap: 40px;
+            max-width: 1100px;  
+            width: 100%;         
+            margin: 70px auto;  
+            padding: 60px;
 
-            max-width: 90vw;
-            margin: 0 auto;
-            padding: 70px 40px;
-
-            background-color: rgb(246, 240, 229);
             border-radius: 24px;
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
-            margin:25px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
 
             .img-container{
                 background-color: white;
@@ -169,7 +173,6 @@ body {
 
             .txt-container{
                 background-color: white;
-                /* width : 1000px; */
                 height: 300px;
 
                 width: 55%;
@@ -186,19 +189,32 @@ body {
                 }
             }
         }
+
+        .main-container.full {
+            justify-content: center;
+            text-align: center;
+
+            .txt-container {
+            text-align: center;
+            width: 100%;
+            height: 200px;
+            max-width: none;
+            }
+        }
+
     }
 
     footer{
 
-        background-color: black;
-        color:white;
+        background-color: var(--footer-bkg-color);
+        color:var(--footer-txt-color);
 
         .footer-container{
             display:flex;
             justify-content: center;
             align-items:center;
 
-            width:990px;
+            width:100%;
 
             margin: 0 auto;
             padding:30px;
@@ -208,7 +224,7 @@ body {
 
             li{
                 list-style: none;
-                color:white;
+                color:var(--footer-txt-color);
                 padding:0px 10px;
             }
 
@@ -216,4 +232,152 @@ body {
 
     }
 
+}
+
+/* ============================= */
+/* GRAND ÉCRAN : 1200px et plus */
+/* ============================= */
+
+@media (min-width: 1200px) {
+
+    .main-container {
+        max-width: 1100px;
+        flex-direction: row;
+    }
+
+    .img-container {
+        width: 45%;
+    }
+
+    .txt-container {
+        width: 55%;
+        text-align: left;
+    }
+}
+
+
+/* ============================= */
+/* ÉCRAN MOYEN : 768px à 1199px */
+/* ============================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .hero {
+        height: 420px;
+    }
+
+    .hero img {
+        width: clamp(140px, 20vw, 220px);
+    }
+
+    .hero-text h1 {
+        font-size: 52px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+    }
+
+    .main-container {
+        max-width: 85%;
+        padding: 45px;
+        gap: 30px;
+        flex-direction: row;
+    }
+
+    .img-container {
+        width: 45%;
+        height: 260px;
+    }
+
+    .txt-container {
+        width: 55%;
+        text-align: left;
+    }
+
+    .txt-container h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* ============================= */
+/* PETIT ÉCRAN : moins de 768px */
+/* ============================= */
+
+@media (max-width: 767px) {
+
+    body header {
+        height: auto;
+    }
+
+    body header .header-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .hero {
+        height: 360px;
+        background-attachment: scroll;
+    }
+
+    .hero img {
+        width: 130px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: none;
+        margin: 40px auto;
+        padding: 30px;
+        gap: 25px;
+    }
+
+    .txt-container {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .img-container {
+        width: 100%;
+        height: 220px;
+    }
+
+    .txt-container h2 {
+        font-size: 28px;
+    }
+
+    .txt-container p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .main-container.full {
+        padding: 40px 25px;
+    }
+
+    .main-container.full .txt-container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .footer-container {
+        width: 100%;
+        text-align: center;
+        padding: 25px;
+    }
 }
