@@ -201,12 +201,11 @@ body {
             }
 
             .txt-container.noMaxHeight{
-                   /* height: auto;  */
                    text-align: justify;
                     width: 100%;
 
-                    height: 400px;      /* ou max-height */
-                    overflow-y: auto;   /* active la barre de scroll */
+                    height: 500px;      
+                    overflow-y: auto;   
                    
                    h1{
                         text-align: left;
@@ -237,6 +236,7 @@ body {
                     position: fixed;
                     width: 500px;
                     height: 500px;
+                    margin-top:50px;
 
                     img{
                         width: 100%;
