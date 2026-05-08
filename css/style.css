@@ -197,17 +197,17 @@ body {
                     margin-bottom: 25px;
                 }
 
-                a:link {
+                a:not(.btn):link {
                     text-decoration: none;
                     color: var(--main-container-link-color);
                 }
 
-                a:visited {
+                a:not(.btn):visited {
                     text-decoration: none;
                     color: var(--main-container-link-color);
                 }
 
-                a:hover{
+                a:not(.btn):hover{
                      text-decoration: none;
                      color: var(--main-container-link-hover-color);
                 }
@@ -219,18 +219,6 @@ body {
                 height: 200px;
             }
         }
-    }
-
-    /* ///TEMP PROJET */
-    main.projet{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        background-image:url(../img/hero-background3.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
     }
 
     footer{
