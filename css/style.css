@@ -10,6 +10,8 @@
     --main-container-link-hover-color:#32bddc;
     --footer-txt-color:white;
     --footer-bkg-color:black;
+    --article-txt-color:white;
+    --article-bkg-color:rgb(37, 37, 37);
 }
 
 * {
