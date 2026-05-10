@@ -20,6 +20,8 @@ body.projet {
         .main-container.projet.invisible{
             margin: 0;
             background-color:transparent;
+            backdrop-filter: blur(0px);
+            
             border-radius: 0px;
             box-shadow: none;
             padding:0px;
@@ -33,6 +35,8 @@ body.projet {
         .main-container.projet{
             justify-content: center; /*  axe vertical / principal */
             align-items:center; /*  axe horizontal / secondaire */
+            backdrop-filter: blur(20px);
+            background-color: var(--main-container-projet-color);
                 
             max-width: 550px; 
             margin: 45px 45px 45px 0;

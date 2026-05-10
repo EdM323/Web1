@@ -4,14 +4,18 @@
     --btn-txt-color:white;
     --btn-bkg-color:black;
     --btn-hover-bkg-color:#32bddc;
-    --hero-txt-shadow-color:rgba(255, 255, 255, 0.95);
+    --hero-txt-shadow-color:rgba(255, 255, 255, 0.9);
     --main-container-color:white;
     --main-container-link-color:black;
     --main-container-link-hover-color:#32bddc;
+    --main-container-shadow-color:rgba(0, 0, 0, 0.1);
+    --main-container-projet-color:rgba(255, 255, 255, 0.7);
+    --container-shadow-color:rgba(0, 0, 0, 0.1);
     --footer-txt-color:white;
     --footer-bkg-color:black;
     --article-txt-color:white;
     --article-bkg-color:rgb(37, 37, 37);
+    --article-shadow-color:rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -169,7 +173,7 @@ body {
             padding: 60px;
 
             border-radius: 24px;
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 12px 35px var(--main-container-shadow-color);
             background-color: var(--main-container-color);
 
             .img-container{
