@@ -1,4 +1,6 @@
 :root {
+    --aside-bkg-color:rgba(0, 0, 0, 0.566);
+    --aside-txt-color:white;
     --header-txt-color:white;
     --header-bkg-color:black;
     --btn-txt-color:white;
@@ -252,10 +254,15 @@ body {
 
                 h2{
                     font-size: clamp(28px, 2.5vw, 32px);
+                    margin-bottom: 5px;
+                }
+
+                hr{
                     margin-bottom: 20px;
                 }
 
                 p{
+                    margin-top: 15px;
                     font-size: clamp(14px, 1.3vw, 18px);
                     line-height: 1.6;
                     margin-bottom: 25px;
