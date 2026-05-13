@@ -2,10 +2,6 @@ body.projet main.projet {
     height: fit-content;
     width: 100%;
 
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center; */
-
     background-image: url(../img/hero-background3.jpg);
     background-size: cover;
     background-position: center;
@@ -74,7 +70,7 @@ body.projet main.projet .main-container.projet aside ul {
 
 body.projet main.projet .main-container.projet aside li {
     color: var(--aside-txt-color);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 body.projet main.projet .main-container.projet .txt-container {
@@ -92,7 +88,8 @@ body.projet main.projet .main-container.projet .txt-container {
 
 body.projet main.projet .main-container.projet .txt-container p {
     margin-top: 0;
-    font-size: clamp(14px, 1.3vw, 18px);
+    /* font-size: clamp(14px, 1.3vw, 18px); */
+    font-size:1rem;
     line-height: 1.6;
     margin-bottom: 0;
 }
@@ -102,12 +99,12 @@ body.projet main.projet .main-container.projet .txt-container hr {
 }
 
 body.projet main.projet .main-container.projet .txt-container h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 5px;
 }
 
 body.projet main.projet .main-container.projet .txt-container h2 {
-    width: 90%;
+    width: 80%;
 }
 
 body.projet main.projet .main-container.projet .txt-container h1,
@@ -130,12 +127,33 @@ body.projet main.projet .container-btn .btn {
 
 @media (min-width: 1200px) {
     body.projet main.projet .main-container.projet aside li {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
 @media (max-width: 767px) {
+
+    body.projet main.projet .main-container.projet aside {
+        width: 25%;
+    }
+
+    body.projet main.projet .main-container.projet .txt-container {
+        width: 75%;
+    }
+
+    body main .main-container .txt-container hr {
+        display: block;
+    }
+
+    body main .main-container .txt-container p {
+        padding: 0;
+    }
+
     body.projet main.projet .main-container.projet .txt-container {
         text-align: justify;
+    }
+
+    body.projet main.projet .main-container.projet .txt-container h2 {
+        width: 90%;
     }
 }

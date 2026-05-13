@@ -30,7 +30,7 @@
 
 html {
     font-family: "Trebuchet MS", sans-serif;
-    font-size: 15px;
+    font-size: 100%; /*16px*/
     text-align: justify;
 }
 
@@ -111,7 +111,7 @@ body .btn {
     padding: 14px 28px;
     border-radius: 999px;
 
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 0.5px;
     text-decoration: none;
 
@@ -155,6 +155,7 @@ body main .hero .hero-text h1 {
     animation: apparitionHero-txt 1.25s ease-out;
 
     font-size: clamp(36px, 5vw, 65px);
+    /* font-size: 3rem; */
     margin-bottom: 15px;
 }
 
@@ -210,7 +211,9 @@ body main .main-container .txt-container {
 }
 
 body main .main-container .txt-container h2 {
-    font-size: clamp(28px, 2.5vw, 32px);
+    /* font-size: clamp(28px, 2.5vw, 32px); */
+    text-align: left;
+    font-size:1.875rem;
     margin-bottom: 5px;
 }
 
@@ -220,7 +223,8 @@ body main .main-container .txt-container hr {
 
 body main .main-container .txt-container p {
     margin-top: 15px;
-    font-size: clamp(14px, 1.3vw, 18px);
+    /* font-size: clamp(14px, 1.3vw, 18px); */
+    font-size:1rem;
     line-height: 1.6;
     margin-bottom: 25px;
 }
@@ -240,6 +244,10 @@ body main .main-container .txt-container.large {
     text-align: center;
     width: 100%;
     height: 200px;
+}
+
+body main .main-container .txt-container.large h2 {
+    text-align: center;
 }
 
 body footer {
@@ -282,7 +290,7 @@ body footer .footer-container a {
     }
 
     body header .header-container li {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     body main .hero {
@@ -298,7 +306,12 @@ body footer .footer-container a {
     }
 
     body footer .footer-container {
-        font-size: 18px;
+        font-size: 1.125rem;
+    }
+
+        body footer .footer-container table tr td{
+        padding: 0 1px;
+        text-align: center;
     }
 }
 
@@ -347,6 +360,19 @@ body footer .footer-container a {
         text-align: center;
     }
 
+    body main .main-container .txt-container hr {
+        display: none;
+    }
+
+    body main .main-container .txt-container p {
+        padding: 0 20px;
+    }
+
+    body main .main-container .txt-container h2 {
+        text-align: center;
+
+    }
+
     body main .main-container .img-container {
         width: 100%;
         height: 220px;
@@ -354,7 +380,7 @@ body footer .footer-container a {
 
     body footer {
         height: 75px;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     body footer .footer-container {

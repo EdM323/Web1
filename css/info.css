@@ -132,12 +132,12 @@ body.info main.info .container .section-img img {
 body.info main.info .container .sub-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
-body.info main.info .container .sub-container article {
+body.info main.info .container .sub-container article{
     flex: 1 1 200px;
-    max-width: none;
 
     padding: 15px;
     color: var(--article-txt-color);
@@ -213,4 +213,5 @@ body.info main.info .container-btn .btn {
     body.info main.info .container.type2 {
         flex-direction: column;
     }
+    
 }
