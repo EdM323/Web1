@@ -114,9 +114,19 @@ body.info{
             }
 
             img.centrer{
-                    width: 65%;
-                    display: block;
-                    margin: 30px auto;
+                width: 60%;
+                display: block;
+                margin: 60px auto 30px auto;
+
+                @media (min-width: 1200px) {
+                    width: 50%;
+                }
+
+                @media (max-width: 767px) {
+                    width: 80%; 
+                }
+
+
             }
 
             .section-titre {
