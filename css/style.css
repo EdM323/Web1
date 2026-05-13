@@ -1,5 +1,5 @@
 :root {
-    --aside-bkg-color:rgba(0, 0, 0, 0.566);
+    --aside-bkg-color:rgba(0, 0, 0, 0.6);
     --aside-txt-color:white;
     --header-txt-color:white;
     --header-bkg-color:black;
@@ -184,8 +184,6 @@ body {
 
                 img{
                     animation: apparitionHero-img 1.25s ease-out;
-                    width: clamp(175px, 35vw, 275px);  /* clamp(valeur-min, valeur-idéale, valeur-max) */
-
                     width:275px;         
 
                     @media (min-width: 1200px) {

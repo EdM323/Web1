@@ -27,25 +27,74 @@ body.projet {
             background-color: transparent;
             box-shadow: none;
             border-radius: 0;
+      
 
             aside{
-                position:sticky;
-                top:30px;
-                height: calc(100vh - 60px);
+                position: sticky;
+                top: 30px;
+
+                height: fit-content;
+                max-height: calc(100vh - 60px);
+                box-sizing: border-box;
+
                 width: 30%;
-                background-color: var(--aside-bkg-color);
-                padding: 25px; 
+                padding: 50px 25px;
                 border-radius: 24px;
-                
-                ul li{
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                background-color: var(--aside-bkg-color);
+
+                img{
+                    width:100%; 
+                    object-fit: cover;  
+                    margin-bottom: 25px ;     
+                }      
+
+                    a:visited {
+                        text-decoration: none;
+                        color: var(--header-txt-color);
+                    }
+                    
+                    a:link {
+                        text-decoration: none;
+                        color: var(--header-txt-color);
+                    }
+
+                    a:visited {
+                        text-decoration: none;
+                        color: var(--header-txt-color);
+                    }
+
+                    a:hover{
+                    text-decoration:underline;
+                    }
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    gap:5vh;
+                    text-align: center;
+                }
+
+               li{
                     color: var(--aside-txt-color);
+
+                    font-size:16px;
+
+                    @media (min-width: 1200px) {
+                    font-size: 20px;  
+                    }
                 }
             }
 
             .txt-container{
                 gap: 40px;
                 max-width: 1100px;  
-                width: 70%;
+                width: 60%;
                 height:fit-content;
                 margin: 0;
                 padding: 30px;
@@ -53,6 +102,28 @@ body.projet {
                 border-radius: 24px;
                 box-shadow: 0 12px 35px var(--container-shadow-color);
                 background-color: var(--main-container-color); 
+
+                @media (max-width: 767px) {
+                    text-align:justify;
+                }
+
+                p   {
+                    margin-top: 0px;
+                    font-size: clamp(14px, 1.3vw, 18px);
+                    line-height: 1.6;
+                    margin-bottom: 0px;
+                }
+
+                hr{
+                    margin-bottom: 0px;
+                }
+
+                h1, h2{
+                @media (max-width: 767px) {
+                        text-align:center;
+                    }
+                }
+
             }
         }
             
