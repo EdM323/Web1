@@ -561,24 +561,29 @@ body.info main.info .next-article .btn {
         text-align: center;
     }
 
-    body.info main.info .hero .hero-container .hero-text h1 {
-        width: 100%;
+body.info main.info .hero .hero-container .hero-text h1 {
+    width: 100%;
+    max-width: 100%;
 
-        margin: 0;
+    margin: 0;
 
-        font-size: clamp(2rem, 10vw, 2.8rem);
-        line-height: 1.08;
+    font-size: clamp(1.75rem, 8.5vw, 2.8rem);
+    line-height: 1.08;
 
-        text-align: center;
-        text-wrap: balance;
+    text-align: center;
+    text-wrap: balance;
 
-        overflow-wrap: normal;
-        word-break: normal;
-        hyphens: none;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
 
-        text-shadow: none;
-        filter: none;
-    }
+    text-shadow: none;
+    filter: none;
+}
+
+    body.info.info3 main.info .hero .hero-container .hero-text h1 {
+    font-size: clamp(1.75rem, 8.5vw, 2.8rem);
+}
 
 
     /* Bandeau descriptif */
@@ -731,11 +736,24 @@ body.info main.info .next-article .btn {
     /* Article suivant */
 
     body.info main.info .next-article {
-        min-height: 210px;
+ position: relative;
 
-        padding: 40px 20px;
+    width: 100%;
+    min-height: 250px;
 
-        background-position: center;
+    padding: 50px 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/hero-background3.jpg);
+    background-size: cover;
+    background-position: center 72%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* AJOUT */
+
+    overflow: hidden;
     }
 
     body.info main.info .next-article .btn {
