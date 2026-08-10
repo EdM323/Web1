@@ -29,26 +29,44 @@ body.projet main.projet .main-container.projet aside {
     position: sticky;
     top: 30px;
 
-    height: fit-content;
-    max-height: calc(100vh - 60px);
-    box-sizing: border-box;
-
     width: 30%;
-    padding: 50px 25px;
+    height: var(--aside-height, auto);
+
+    box-sizing: border-box;
+    flex-shrink: 0;
+
+    padding: 30px 25px;
     border-radius: 24px;
 
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     background-color: var(--aside-bkg-color);
 }
 
-body.projet main.projet .main-container.projet aside img {
+body.projet main.projet .main-container.projet aside .aside-content {
     width: 100%;
-    object-fit: cover;
-    margin-bottom: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
 }
+
+body.projet main.projet .main-container.projet aside img {
+    display: block;
+
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+
+    margin: 0;
+}
+
+
 
 body.projet main.projet .main-container.projet aside a:link,
 body.projet main.projet .main-container.projet aside a:visited {
@@ -61,10 +79,15 @@ body.projet main.projet .main-container.projet aside a:hover {
 }
 
 body.projet main.projet .main-container.projet aside ul {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    gap: 35px;
+
     list-style: none;
-    gap: 5vh;
     text-align: center;
 }
 
@@ -83,7 +106,10 @@ body.projet main.projet .main-container.projet .txt-container {
 
     border-radius: 24px;
     box-shadow: 0 12px 35px var(--container-shadow-color);
-    background-color: var(--main-container-color);
+   
+    
+    background-color: rgba(255, 255, 255, 0.9);
+backdrop-filter: blur(15px);
 }
 
 body.projet main.projet .main-container.projet .txt-container p {
@@ -119,7 +145,7 @@ body.projet main.projet .container-btn {
 }
 
 body.projet main.projet .container-btn .btn {
-    margin: 8% 0 5% 0;
+    margin: 0px 0px 20px 0px;
     width: 50%;
     text-align: center;
     padding: 24px 28px;
@@ -134,22 +160,36 @@ body.projet main.projet .container-btn .btn {
 @media (max-width: 767px) {
 
     body.projet main.projet .main-container.projet aside {
-        width: 25%;
+        display: none;
     }
-
-    body.projet main.projet .main-container.projet .txt-container {
-        width: 75%;
+    
+    body.projet main.projet .main-container.projet {
+        padding:30px 10px;
     }
 
     body main .main-container .txt-container hr {
         display: block;
     }
 
+
     body main .main-container .txt-container p {
         padding: 0;
     }
 
-    body.projet main.projet .main-container.projet .txt-container {
-        text-align: justify;
-    }
+body.projet main.projet .main-container.projet .txt-container {
+    width: 100%;
+    max-width: none;
+    text-align: justify;
+    padding: 30px;
+
 }
+
+body.projet main.projet .main-container.projet .txt-container h2 {
+ width:100%;
+
+}
+
+body.projet main.projet .container-btn .btn {
+    width:80%
+}
+

@@ -2,225 +2,503 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>UNIVERSITÉ. L'intégration dynamique.</title>
 
-    <meta name="description" content="Description de la deuxième caractéristique de la plateforme : les articles sont liés entre eux, c'est-à-dire, 
-    qu'une modification peut avoir un impact sur tout le réseau de connaissances. ">
+    <meta
+        name="description"
+        content="Description de la deuxième caractéristique de la plateforme : les articles sont liés entre eux, de sorte qu’une modification peut avoir un impact sur tout le réseau de connaissances."
+    >
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/info.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet"
+    >
 </head>
+
 <body class="info">
+
     <header>
         <ul class="header-container">
-            <li><a href="index.html">Acceuil</a></li>
-            <li><a href="projet.html">Le projet</a></li>
-            <li><a href="javascript:void(0)">Développement</a></li>
-            <li><a href="javascript:void(0)">Nous soutenir</a></li>
-            <li><a href="javascript:void(0)">À propos</a></li>
+            <li>
+                <a href="index.html">Accueil</a>
+            </li>
+
+            <li>
+                <a href="projet.html">Le projet</a>
+            </li>
+
+            <li>
+                <a href="javascript:void(0)">Développement</a>
+            </li>
+
+            <li>
+                <a href="javascript:void(0)">Nous soutenir</a>
+            </li>
+
+            <li>
+                <a href="javascript:void(0)">À propos</a>
+            </li>
         </ul>
     </header>
 
-<main class="info">
-    <div class="hero">
-        <div class="hero-container">
-            <img src="img/info2-icon.png" alt="Logo">
-            <div class="hero-text">
-                <h1>Intégration dynamique des articles.</h1>
-                <p>
-                    Le deuxième axe du projet consiste à ne plus présenter les articles scientifiques
-                    comme des textes isolés, mais comme des éléments d’un réseau de connaissances.
-                    Chaque article serait relié aux textes qu’il cite, aux textes qui le citent et aux
-                    concepts qu’il mobilise.
-                </p>
-            </div>
-        </div>
-    </div>
+    <main class="info">
 
-    <div class="main-container info">
-        <section class="container">
-            <div class="section-titre">
-                <img src="img/info2-icone1.png" alt="Icône référence">
-                <h2>Un système d’interdépendance</h2>
-            </div>
+        <!-- ==================================================
+             HÉRO
+             ================================================== -->
 
-            <p>
-                Dans cette plateforme, les articles ne seraient pas indépendants les uns des autres.
-                Chaque publication reposerait, en partie, sur des informations issues d’autres travaux.
-                Cette dépendance créerait un réseau où les contenus seraient liés par leurs références.
-            </p>
-            <p>
-                Dès lors, la validité d’un article ne serait jamais entièrement isolée : elle dépendrait
-                aussi de la solidité des informations qu’il mobilise. Lorsqu’une information importante
-                serait corrigée, nuancée ou invalidée, cette modification pourrait affecter l’ensemble
-                des articles qui s’y appuient.
-            </p>
+        <section class="hero">
 
-            <img class="centrer" src="img/info2-img1.png" alt="schéma interdépendance des articles">
+            <div class="hero-container">
 
-            <div class="sub-container">
-                <article>
-                    <h3>Information source</h3>
-                        <hr>
-                        <p>
-                            Une information contenue dans un article pourrait servir de base à plusieurs articles et structurer
-                            une partie du savoir dans un domaine donné.
-                        </p>
-                </article>
-                <article>
-                    <h3>Dépendance des articles</h3>
-                        <hr>
-                        <p>
-                            Les publications qui mobiliseraient cette information en hériteraient partiellement, par le biais des références,
-                            ce qui créerait un lien de dépendance entre elles.
-                        </p>
-                </article>           
-                <article>
-                    <h3>Propagation des modifications</h3>
-                        <hr>
-                        <p>
-                            Une correction apportée à une information pourrait entraîner automatiquement des suggestions de réévaluation des
-                            articles qui en dépendraient, directement ou indirectement.
-                        </p>
-                </article>     
-            </div>
+                <img
+                    src="img/info2-icon.png"
+                    alt="Illustration représentant un réseau d’articles scientifiques"
+                >
 
-            <div class="sub-container">
-                <img class="centrer" src="img/info2-img2.png" alt="schéma articles centraux">
-            </div>   
-
-            <div class="sub-container">
-                <article>
-                    <h3>Points centraux du réseau</h3>
-                        <hr>
-                        <p>
-                            Les articles les plus mobilisés deviendraient des points stratégiques, car leur influence s’étendrait à un grand nombre de publications. Cette centralité reposerait sur le nombre de chaînes de références, directes et indirectes, qui convergeraient vers eux.
-                        </p>
-                </article>   
-            </div>               
-        </section>
-
-        <section class="container">
-            <div class="section-titre">
-                <img src="img/info2-icone2.png" alt="Icône référence">
-                <h2>Remonter à la source des concepts</h2>
-            </div>
-
-            <p>
-                Au-delà des références, la plateforme pourrait aussi permettre de suivre l’histoire des concepts. En cliquant sur un concept, l’utilisateur pourrait consulter son origine, ses transformations et les différents contextes dans lesquels il est mobilisé.
-            </p>
-            <p>
-                Cette fonctionnalité serait particulièrement utile pour la recherche en sciences humaines, car les concepts y évoluent beaucoup et peuvent changer de signification selon les auteurs qui les mobilisent et les périodes dans lesquelles ils sont utilisés.
-            </p>
-
-            <div class="sub-container">
-                <article>
-                    <h3>Origine des concepts</h3>
-                        <hr>
-                        <p>
-                            Il serait possible de cliquer sur un concept afin d’identifier le moment et le contexte de son apparition.
-                        </p>
-                </article>
-                <article>
-                    <h3>Évolution des significations</h3>
-                        <hr>
-                        <p>
-                            Les transformations du concept ou de sa signification à travers les différentes publications pourraient aussi être retracées, de même que les moments clés de ces transformations.
-                        </p>
-                </article>           
-                <article>
-                    <h3>Usages problématiques</h3>
-                        <hr>
-                        <p>
-                            Le système pourrait mettre en évidence les concepts qui sont utilisés dans un sens différent de leur usage prévu si le changement de sens n'a pas été explicité lors du passage d'une publication à une autre.
-                        </p>
-                </article>    
-            </div>               
-        </section>
-
-        <section class="container">
-            <div class="section-titre">
-                <img src="img/info2-icone3.png" alt="Icône référence">
-                <h2>Cartographie du réseau scientifique</h2>
-            </div>
-
-            <p>En somme, les relations entre les articles pourraient être représentées sous forme d’arborescence, où chaque publication s’inscrirait dans un réseau structuré de dépendances. Cette représentation ne viserait pas seulement à situer les articles les uns par rapport aux autres, mais à rendre visible l’organisation interne du savoir et les liens qui en assurent la cohérence.</p>
-            <p>Certains articles constitueraient des points d’ancrage du réseau, à partir desquels se déploieraient différentes branches. Leur solidité dépendrait de leur capacité à résister aux critiques et à demeurer pertinents dans le temps, ce qui contribuerait à former des structures relativement stables du savoir.</p>
-            <p>À l’inverse, certaines branches pourraient apparaître plus fragiles, dans la mesure où elles reposeraient sur des hypothèses contestées, des interprétations discutables ou des cadres théoriques moins stabilisés. La remise en question d’un article central pourrait alors entraîner la réévaluation, voire l’abandon, des publications qui en dépendent.</p>
-            <div class="sub-container">
-                <article>
-                    <h3>Articles structurants</h3>
-                        <hr>
-                        <p>
-                            Certains articles joueraient un rôle de fondation en soutenant un grand nombre de travaux, ce qui en ferait des éléments centraux du réseau.
-                        </p>
-                </article>
-                <article>
-                    <h3>Branches du savoir</h3>
-                        <hr>
-                        <p>
-                            Les publications s’organiseraient en ensembles cohérents, correspondant à des développements spécifiques à partir de certaines idées ou résultats initiaux. 
-                        </p>
-                </article>           
-                <article>
-                    <h3>Fragilité et réévaluation</h3>
-                        <hr>
-                        <p>
-                       Les branches reposant sur des bases plus incertaines seraient plus susceptibles d’être critiquées, transformées ou abandonnées.
-                        </p>
-                </article>     
-                 <article>
-                    <h3>Dynamique du réseau</h3>
-                        <hr>
-                        <p>
-                       Le travail des utilisateurs consisterait à renforcer certaines structures, à en corriger d’autres et à redistribuer l’attention portée aux différentes parties du réseau.
-                        </p>
-                </article>                 
-            </div>               
-        </section> 
-
-        <section class="container type2">
-                <div class="section-img">
-                    <img src="img/info-icone-loupe.png" alt="Icône document et crayon">
+                <div class="hero-text">
+                    <h1>
+                        Intégration dynamique des articles.
+                    </h1>
                 </div>
-                
-                <div class="section-txt">
-                    <h2>Vers une nouvelle forme de recherche</h2>
 
+            </div>
+
+            <div class="hero-description">
+
+                <div class="hero-description-content">
                     <p>
-                        Cette intégration dynamique pourrait transformer profondément l’acte de recherche. Il ne s’agirait plus seulement de trouver un article, mais de naviguer dans un réseau de connaissances, de suivre des idées et d’en analyser les transformations.
-                        La plateforme pourrait ainsi devenir un outil permettant de rendre visibles les relations qui structurent la production du savoir scientifique et d'observer leur évoluion dans le temps.  
+                        Le deuxième axe du projet consiste à ne plus
+                        présenter les articles scientifiques comme des
+                        textes isolés, mais comme des éléments d’un
+                        réseau de connaissances. Chaque article serait
+                        relié aux textes qu’il cite, aux textes qui le
+                        citent et aux concepts qu’il mobilise.
                     </p>
                 </div>
+
+            </div>
+
         </section>
 
-        <div class="container-btn">
-            <a href="info3.html" class="btn">Voir l'article suivant</a>
+
+        <!-- ==================================================
+             CONTENU PRINCIPAL
+             ================================================== -->
+
+        <div class="main-container info">
+
+            <!-- Système d’interdépendance -->
+
+            <section class="container">
+
+                <div class="section-titre">
+
+                    <img
+                        src="img/info2-icone1.png"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <h2>
+                        Un système d’interdépendance
+                    </h2>
+
+                </div>
+
+                <p>
+                    Dans cette plateforme, les articles ne seraient pas
+                    indépendants les uns des autres. Chaque publication
+                    reposerait, en partie, sur des informations issues
+                    d’autres travaux. Cette dépendance créerait un
+                    réseau où les contenus seraient liés par leurs
+                    références.
+                </p>
+
+                <p>
+                    Dès lors, la validité d’un article ne serait jamais
+                    entièrement isolée : elle dépendrait aussi de la
+                    solidité des informations qu’il mobilise.
+                    Lorsqu’une information importante serait corrigée,
+                    nuancée ou invalidée, cette modification pourrait
+                    affecter l’ensemble des articles qui s’y appuient.
+                </p>
+
+                <img
+                    class="centrer"
+                    src="img/info2-img1.png"
+                    alt="Schéma représentant l’interdépendance entre différents articles"
+                >
+
+                <div class="sub-container">
+
+                    <article>
+                        <h3>
+                            Information source
+                        </h3>
+
+                        <hr>
+
+                        <p>
+                            Une information contenue dans un article
+                            pourrait servir de base à plusieurs articles
+                            et structurer une partie du savoir dans un
+                            domaine donné.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            Dépendance des articles
+                        </h3>
+
+                        <hr>
+
+                        <p>
+                            Les publications qui mobiliseraient cette
+                            information en hériteraient partiellement,
+                            par le biais des références, ce qui créerait
+                            un lien de dépendance entre elles.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            Propagation des modifications
+                        </h3>
+
+                        <hr>
+
+                        <p>
+                            Une correction apportée à une information
+                            pourrait entraîner automatiquement des
+                            suggestions de réévaluation des articles
+                            qui en dépendraient, directement ou
+                            indirectement.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="sub-container reseau-central">
+
+                    <img
+                        src="img/info2-img2.png"
+                        alt="Schéma représentant un article central au sein d’un réseau de publications"
+                    >
+
+                    <article>
+                        <h3>
+                            Points centraux du réseau
+                        </h3>
+
+                        <hr>
+
+                        <p>
+                            Les articles les plus mobilisés deviendraient
+                            des points stratégiques, car leur influence
+                            s’étendrait à un grand nombre de publications.
+                            Cette centralité reposerait sur le nombre de
+                            chaînes de références, directes et indirectes,
+                            qui convergeraient vers eux.
+                        </p>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- Source des concepts -->
+
+            <section class="container">
+
+                <div class="section-titre">
+
+                    <img
+                        src="img/info2-icone2.png"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <h2>
+                        Remonter à la source des concepts
+                    </h2>
+
+                </div>
+
+                <p>
+                    Au-delà des références, la plateforme pourrait
+                    aussi permettre de suivre l’histoire des concepts.
+                    En cliquant sur un concept, l’utilisateur pourrait
+                    consulter son origine, ses transformations et les
+                    différents contextes dans lesquels il est mobilisé.
+                </p>
+
+                <p>
+                    Cette fonctionnalité serait particulièrement utile
+                    pour la recherche en sciences humaines, car les
+                    concepts y évoluent beaucoup et peuvent changer de
+                    signification selon les auteurs qui les mobilisent
+                    et les périodes dans lesquelles ils sont utilisés.
+                </p>
+
+                <div class="sub-container">
+
+                    <article>
+                        <h3>
+                            Origine des concepts
+                        </h3>
+
+                        <hr>
+
+                        <p>
+                            Il serait possible de cliquer sur un concept
+                            afin d’identifier le moment et le contexte de
+                            son apparition.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            Évolution des significations
+                        </h3>
+
+                        <hr>
+
+                        <p>
+                            Les transformations du concept ou de sa
+                            signification à travers les différentes
+                            publications pourraient aussi être
+                            retracées, de même que les moments clés de
+                            ces transformations.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            Usages problématiques
+                        </h3>
+
+                        <hr>
+
+                        <p>
+                            Le système pourrait mettre en évidence les
+                            concepts utilisés dans un sens différent de
+                            leur usage prévu lorsque ce changement de
+                            sens n’aurait pas été explicité lors du
+                            passage d’une publication à une autre.
+                        </p>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- Cartographie du réseau -->
+
+            <section class="container">
+
+                <div class="section-titre">
+
+                    <img
+                        src="img/info2-icone3.png"
+                        alt=""
+                        aria-hidden="true"
+                    >
+
+                    <h2>
+                        Cartographie du réseau scientifique
+                    </h2>
+
+                </div>
+
+                <p>
+                    En somme, les relations entre les articles
+                    pourraient être représentées sous forme
+                    d’arborescence, où chaque publication s’inscrirait
+                    dans un réseau structuré de dépendances. Cette
+                    représentation ne viserait pas seulement à situer
+                    les articles les uns par rapport aux autres, mais à
+                    rendre visible l’organisation interne du savoir et
+                    les liens qui en assurent la cohérence.
+                </p>
+
+                <p>
+                    Certains articles constitueraient des points
+                    d’ancrage du réseau, à partir desquels se
+                    déploieraient différentes branches. Leur solidité
+                    dépendrait de leur capacité à résister aux critiques
+                    et à demeurer pertinents dans le temps, ce qui
+                    contribuerait à former des structures relativement
+                    stables du savoir.
+                </p>
+
+                <p>
+                    À l’inverse, certaines branches pourraient
+                    apparaître plus fragiles, dans la mesure où elles
+                    reposeraient sur des hypothèses contestées, des
+                    interprétations discutables ou des cadres
+                    théoriques moins stabilisés. La remise en question
+                    d’un article central pourrait alors entraîner la
+                    réévaluation, voire l’abandon, des publications qui
+                    en dépendent.
+                </p>
+
+                <div class="sub-container">
+
+                    <article>
+                        <h3>
+                            Articles structurants
+                        </h3>
+
+                        <hr>
+
+                        <p>
+                            Certains articles joueraient un rôle de
+                            fondation en soutenant un grand nombre de
+                            travaux, ce qui en ferait des éléments
+                            centraux du réseau.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            Branches du savoir
+                        </h3>
+
+                        <hr>
+
+                        <p>
+                            Les publications s’organiseraient en
+                            ensembles cohérents, correspondant à des
+                            développements spécifiques à partir de
+                            certaines idées ou de certains résultats
+                            initiaux.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            Fragilité et réévaluation
+                        </h3>
+
+                        <hr>
+
+                        <p>
+                            Les branches reposant sur des bases plus
+                            incertaines seraient plus susceptibles
+                            d’être critiquées, transformées ou
+                            abandonnées.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            Dynamique du réseau
+                        </h3>
+
+                        <hr>
+
+                        <p>
+                            Le travail des utilisateurs consisterait à
+                            renforcer certaines structures, à en
+                            corriger d’autres et à redistribuer
+                            l’attention portée aux différentes parties
+                            du réseau.
+                        </p>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- Conclusion -->
+
+            <section class="container type2">
+
+                <div class="section-img">
+                    <img
+                        src="img/info-icone-loupe.png"
+                        alt=""
+                        aria-hidden="true"
+                    >
+                </div>
+
+                <div class="section-txt">
+
+                    <h2>
+                        Vers une nouvelle forme de recherche
+                    </h2>
+
+                    <p>
+                        Cette intégration dynamique pourrait transformer
+                        profondément l’acte de recherche. Il ne
+                        s’agirait plus seulement de trouver un article,
+                        mais de naviguer dans un réseau de
+                        connaissances, de suivre des idées et d’en
+                        analyser les transformations. La plateforme
+                        pourrait ainsi devenir un outil permettant de
+                        rendre visibles les relations qui structurent
+                        la production du savoir scientifique et
+                        d’observer leur évolution dans le temps.
+                    </p>
+
+                </div>
+
+            </section>
+
         </div>
 
-    </div>
+
+        <!-- ==================================================
+             ARTICLE SUIVANT
+             ================================================== -->
+
+        <section class="next-article">
+
+            <div class="next-article-content">
+
+                <a
+                    href="info3.html"
+                    class="btn"
+                >
+                    Voir l’article suivant
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
 
     <footer>
+
         <div class="footer-container">
-            <table>
-                <tr>
-                    <td>©</td>
-                    <td>2026 Édouard Mercure</td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        Tous droits réservés
-                    </td>
-                </tr>
-            </table>
+            <p>© 2026 Édouard Mercure</p>
+            <p>Tous droits réservés</p>
         </div>
+
     </footer>
+
 </body>
 </html>

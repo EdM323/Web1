@@ -8,7 +8,6 @@
 
     <meta name="description" content="La raison d'être du projet et ses trois grands axes : l'édition, l'intégration dynamique et la reconnaissance de l'expertise. ">
 
-    <link rel="preload" href="img/logo.png" as="image">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projet.css">
 
@@ -17,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
 </head>
-
 <body class="projet">
     <header>
         <ul class="header-container">
@@ -31,24 +29,20 @@
 
     <main class="projet">
         <div class="main-container projet">
-<aside>
-    <div class="aside-content">
-        <img src="img/logo.png" alt="logo arbre">
-
-        <ul>
-            <a href="#presentation"><li>Présentation</li></a>
-            <a href="#nom"><li>Le sens du nom</li></a>
-            <a href="#fonctionnement"><li>Fonctionnement</li></a>
-            <a href="#objectif"><li>Objectif</li></a>
-        </ul>
-    </div>
-</aside>
+            <aside>
+                <img src="img/logo.png" alt="logo arbre">
+                <ul>
+                    <a href="#presentation"><li>Présentation</li></a>
+                    <a href="#nom"><li>Le sens du nom</li></a>
+                    <a href="#fonctionnement"><li>Fonctionnement</li></a>
+                    <a href="#objectif"><li>Objectif</li></a>
+                </ul>
+            </aside>
 
             <div class="txt-container">
                 <section id="presentation">
                     <h1>Le projet.</h1>
                     <hr>
-                     <br> 
                     <br><p><span style="font-style: italic;">Université</span> est un projet de plateforme scientifique alternative visant à repenser la manière dont les savoirs sont publiés, corrigés, reliés et reconnus.</p>
                     <br><p>L’idée centrale est simple : rendre les articles scientifiques plus accessibles, plus vérifiables et plus vivants. Plutôt que de considérer une publication comme un texte figé, isolé dans une revue spécialisée, la plateforme la traiterait comme un élément d’un réseau dynamique de connaissances. Chaque article pourrait être consulté, commenté, corrigé, relié à ses sources, replacé dans son histoire intellectuelle et évalué selon la qualité de ses références, de ses concepts et de ses mises à jour.</p>
                     <br><p>Le projet s’adresse d’abord aux sciences humaines et sociales, où les débats théoriques, les usages conceptuels, les interprétations et les filiations intellectuelles jouent un rôle central. Il pourrait toutefois être élargi à d’autres domaines scientifiques, dès lors qu’il existe un besoin de mieux suivre l’évolution, la validité et la circulation des connaissances.</p>
@@ -89,66 +83,18 @@
 
     <footer>
         <div class="footer-container">
-            <p>© 2026 Édouard Mercure</p>
-            <p>Tous droits réservés</p>
+            <table>
+                <tr>
+                    <td>©</td>
+                    <td>2026 Édouard Mercure</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Tous droits réservés
+                    </td>
+                </tr>
+            </table>
+        </div>
     </footer>
-
-<script>
-    const aside = document.querySelector(
-        "body.projet main.projet .main-container.projet aside"
-    );
-
-    const blocTexte = document.querySelector(
-        "body.projet main.projet .main-container.projet .txt-container"
-    );
-
-    function ajusterHauteurAside() {
-        const margeEcran = 30;
-
-        const positionTexte = blocTexte.getBoundingClientRect();
-
-        /*
-         * En haut de la page, l'aside commence au même niveau
-         * que le bloc blanc.
-         *
-         * Pendant le défilement, il reste à 30 px du haut.
-         */
-        const hautAside = Math.max(
-            margeEcran,
-            positionTexte.top
-        );
-
-        /*
-         * Tant que le bas du bloc blanc est sous la fenêtre,
-         * l'aside s'arrête à 30 px du bas de la fenêtre.
-         *
-         * À la fin de la page, il s'arrête exactement au bas
-         * du bloc blanc.
-         */
-        const basAside = Math.min(
-            window.innerHeight - margeEcran,
-            positionTexte.bottom
-        );
-
-        const hauteurDisponible = Math.max(
-            basAside - hautAside,
-            0
-        );
-
-        aside.style.setProperty(
-            "--aside-height",
-            `${hauteurDisponible}px`
-        );
-    }
-
-    ajusterHauteurAside();
-
-    window.addEventListener("load", ajusterHauteurAside);
-    window.addEventListener("resize", ajusterHauteurAside);
-    window.addEventListener("scroll", ajusterHauteurAside, {
-        passive: true
-    });
-</script>
-
 </body>
 </html>
